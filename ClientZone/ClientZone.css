@@ -1,0 +1,186 @@
+:root {
+  --global_main_color: #900c3f;
+  --inside_modules_color_box: #ffffff !important;
+  --inside_modules_color: #f2f2f2;
+  --font_modules_header: "Roboto Condensed", Arial, sans-serif;
+  --global_font: "Cabin", Arial, sans-serif;
+  --homepage_padding_top: 50px;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: var(--inside_modules_color);
+  text-transform: full-width;
+  font-family: var(--global_font);
+  font-size: 16.5px !important;
+}
+
+a {
+  color: var(--global_main_color);
+}
+
+.modulesTitle h1 {
+  font-family: var(--font_modules_header);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
+
+hr {
+  max-width: 50px;
+  border-color: var(--global_main_color);
+  border-width: 3px;
+  opacity: 1.25;
+}
+
+section {
+  padding-top: var(--homepage_padding_top);
+}
+
+.box {
+  min-height: 0px;
+  padding: 48px 32px 56px 32px;
+  border-radius: 8px;
+  max-width: 420px;
+  margin-bottom: 100px;
+  position: relative;
+  background: var(--inside_modules_color_box);
+}
+
+.box .request .btn-primary {
+  border: 1px solid var(--global_main_color);
+  background-color: var(--global_main_color);
+  color: var(--inside_modules_color_box);
+  transition: background-color 0.35s, opacity 0.35s;
+  padding: 10px;
+}
+
+.box .request .btn {
+  border-radius: 3.5px;
+  text-transform: uppercase;
+  transition: opacity 0.35s;
+}
+
+.box .request .btn:hover {
+  opacity: 0.9;
+}
+
+.box .login-box {
+  border-top: 1px solid #e2e2e2;
+}
+
+.box .login-box .social-login-btn {
+  max-width: 300px;
+  white-space: nowrap;
+  border: 1px solid #4264b2;
+  margin: 10px auto;
+  border-radius: 4px;
+  box-shadow: 1px 2px 3px #ccc;
+}
+
+.box .login-box .social-login-btn .login-btn-logo {
+  width: 50px;
+  background-color: #fff;
+}
+
+.box .login-box .social-login-btn .s-1-btn-text {
+  background-color: #4264b2 !important;
+}
+
+.box .login-box .social-login-btn .s-1-btn-text span {
+  background-color: #4264b2 !important;
+}
+
+.box .login-box .social-login-btn .s-1-btn-text {
+  width: calc(100% - 50px);
+  padding: 10px;
+  color: var(--inside_modules_color_box);
+}
+
+.box .login-box .s-google .social-login-btn {
+  border-color: #ea4335;
+}
+
+.box .login-box .s-google .s-1-btn-text {
+  background-color: #ea4335 !important;
+}
+
+.box .login-box .s-google .s-1-btn-text span {
+  background-color: #ea4335 !important;
+}
+
+.s123-client-zone-page {
+  transition: opacity 0.35s;
+}
+
+.s123-client-zone-page:hover {
+  opacity: 0.9;
+}
+
+/* ///////////////////////////////////// */
+.nav-item a {
+  position: relative;
+  margin-left: 10px !important;
+}
+
+.nav-item a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #900c3f;
+  transition: 0.75s;
+}
+
+.nav-item a:hover:after {
+  width: 100%;
+}
+
+#navy ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#footer_social a :hover,
+#navy a :hover {
+  color: #900c3f;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #900c3f !important;
+  border-color: #900c3f !important;
+  width: 100%;
+}
+
+#Contact a :hover {
+  color: #900c3f !important;
+}
+
+#Contact,
+#About {
+  padding-top: 60px;
+}
+
+#About {
+  padding-top: 95px;}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Order</title>
+  <link rel="shortcut icon" href="../media/favicon.png" type="image/x-icon" />
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/f15b1ae9dd.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- ==================NAV===================== -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-info p-2 sticky-top" style="background-color: #ccafaf !important">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="/index.html">
+        <img src="/media/nav_img.png" alt="..." height="70" />
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link mx-2 active" aria-current="page" href="/index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="/index.html">STORE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="/index.html">TRENDING NOW</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="/index.html">ABOUT THE STORE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="/index.html">CONTACT</a>
+          </li>
+          <hr />
+
+          <div id="navy">
+            <ul class="navbar-nav d-flex align-content-center flex-wrap">
+              <ul class="navbar-nav">
+                <li>
+                  <a class="nav-link text-dark h5" href="#"><i class="fa-solid fa-location-arrow"></i></a>
+                </li>
+                <li>
+                  <a class="nav-link text-dark h5" href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                </li>
+                <li>
+                  <a class="nav-link text-dark h5" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li>
+                  <a class="nav-link text-dark h5" href="/cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+
+                <li>
+                  <a class="nav-link text-dark h5" href="tel:01016338149"><i class="fa-solid fa-phone"></i></a>
+                </li>
+                <div>
+                  <li>
+                    <a class="nav-link text-dark h5" href="/ClientZone/ClientZone.html"><i
+                        class="fa-solid fa-user"></i></a>
+                  </li>
+                </div>
+              </ul>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ==================NAV===================== -->
+  <div class="heading d-flex flex-column align-items-center">
+    <div>
+      <h1>COMPLETE YOUR ORDER</h1>
+    </div>
+    <div class="small"></div>
+  </div>
+
+
+  <div class="content">
+    <div class="container">
+      <div class="row" id="content-nav">
+
+        <div class="col-4 d-flex align-items-center" id="nav-info">
+          <i class="bi bi-1-square-fill page-num" style="font-size: 2rem; color: #900c3f; margin-right: 1rem;"></i>
+          <i class="bi bi-info-circle-fill" style="padding-right: 1rem;"></i>
+          <span>Enter your info</span>
+        </div>
+
+        <div class="col-4 d-flex align-items-center in-active" id="nav-delivery">
+          <i class="bi bi-2-square page-num " style="font-size: 2rem; color: #900c3f; margin-right: 1rem;"></i>
+          <i class="fa-solid fa-truck" style="color: #000000; padding-right: 1rem;"></i>
+          <span>Delivery Options</span>
+        </div>
+        <div class="col-4 d-flex align-items-center in-active" id="nav-payment">
+          <i class="bi bi-3-square page-num" style="font-size: 2rem; color: #900c3f; margin-right: 1rem;"></i>
+          <i class="fa-solid fa-credit-card" style="color: #000000; padding-right: 1rem;"></i>
+          <span>Payment</span>
+        </div>
+
+      </div>
+
+      <div class="row flex-column  flex-md-row" id="info-page">
+
+        <div class="col-12 col-md-8 ">
+
+          <form id="info">
+
+
+            <input type="email" placeholder="Email *" class="form-control w-75 mb-3 p-3"
+              aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required
+              data-msg-required="This field is required.">
+
+            <input type="text" placeholder="Full Name *" class="form-control w-75 mb-3 p-3"
+              aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required
+              data-msg-required="This field is required.">
+
+            <input type="text" placeholder="Country *" class="form-control w-75 mb-3 p-3"
+              aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required
+              data-msg-required="This field is required.">
+
+            <input type="text" placeholder="Adress *" class="form-control w-75 mb-3 p-3"
+              aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required
+              data-msg-required="This field is required.">
+
+            <input type="text" placeholder="City *" class="form-control w-75 mb-3 p-3" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default" required data-msg-required="This field is required.">
+
+            <input type="tel" placeholder="Phone *" class="form-control w-75 mb-3 p-3 intl-tel-input "
+              aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required
+              data-msg-required="This field is required.">
+
+            <input type="text" placeholder="Landmard (optional)" class="form-control w-75 mb-5 p-3"
+              aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required
+              data-msg-required="This field is required.">
+
+            <button class="btn btn-custom btn-lg" type="submit">SAVE AND CONTINUE</button>
+          </form>
+        </div>
+
+        <div class="col-12 col-md-4">
+
+          <div class="card d-flex flex-row mt-3 order-details">
+            <img src="img/book.jpg" class="card-img-top w-50 h-50">
+            <div class="card-body">
+              <h5>The power of now-Eckhart Tolle</h5>
+              <span>Quantity:1</span>
+              <h5 style="color: #900c3f;">200ج.م</h5>
+
+            </div>
+          </div>
+
+          <div class="row m-5 " id="total">
+            <div class="col-6">
+              <h5>Total:</h5>
+            </div>
+            <div class="col-6" id="total-price">
+              <h5 style="color: #900c3f;">200ج.م</h5>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+      <div class="row flex-column  flex-md-row" id="delivery-page">
+
+        <div class="col-12 col-md-8 ">
+
+          <form id="delivery-options">
+            <div> <label>
+                <input type="radio" name="d-option"><span>Shipping Cairo-Giza</span>
+                &nbsp;
+                <span>(5 working days)</span> </label>
+              <span style="float:right">45ج.م</span>
+            </div>
+
+            <div>
+              <label>
+                <input type="radio" name="d-option"><span>Shipping Alexandria</span>
+                &nbsp;
+                <span>(5 working days)</span> </label>
+              <span style="float:right">60ج.م</span>
+            </div>
+
+            <div> <label>
+                <input type="radio" name="d-option"><span>Shipping Canal Cities</span>
+                &nbsp;
+                <span>(5 working days)</span> </label>
+              <span style="float:right">65ج.م</span>
+            </div>
+
+            <div> <label>
+                <input type="radio" name="d-option"><span>Shipping Upper Egypt</span>
+                &nbsp;
+                <span>(5 working days)</span> </label>
+              <span style="float:right">90ج.م</span>
+            </div>
+
+            <div> <label>
+                <input type="radio" name="d-option"><span>Shipping Sinai and Red Sea</span>
+                &nbsp;
+                <span>(5 working days)</span> </label>
+              <span style="float:right">100ج.م</span>
+            </div>
+
+            <div> <label>
+                <input type="radio" name="d-option"><span>Shipping Delta Region</span>
+                &nbsp;
+                <span>(5 working days)</span> </label>
+              <span style="float:right">60ج.م</span>
+            </div>
+
+            <button class="btn btn-custom btn-lg m-2" type="submit">SAVE AND CONTINUE</button>
+          </form>
+
+        </div>
+
+        <div class="col-12 col-md-4">
+
+          <div class="card d-flex flex-row mt-3 order-details">
+            <img src="img/book.jpg" class="card-img-top w-50 h-50">
+            <div class="card-body">
+              <h5>The power of now-Eckhart Tolle</h5>
+              <span>Quantity:1</span>
+              <h5 style="color: #900c3f;">200ج.م</h5>
+
+            </div>
+          </div>
+
+          <div class="row m-5 " id="total">
+            <div class="col-6">
+              <h5>Total:</h5>
+            </div>
+            <div class="col-6" id="total-price">
+              <h5 style="color: #900c3f;">200ج.م</h5>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+
+
+      <div class="row " id="payment-page">
+        <div class="col-12 col-md-12 d-flex  flex-column align-items-center justify-content-center ">
+
+          <div class="text-center">
+            <h1 style="color: #900c3f;">200ج.م</h1>
+            <h5>Please choose your payment method</h5>
+          </div>
+
+          <div class="small"></div>
+
+          <div class="payment-method">
+            <div>
+              <input type="radio" checked> <span>Cash on Delivery</span>
+            </div>
+
+          </div>
+
+          <div>
+            <button class="btn btn-custom btn-lg  m-4" type="submit">PLACE ORDER</button>
+
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <!-- ========================FOOTER================================ -->
+  <div class="container-fluid m-0 p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info p-2 d-flex" style="background-color: #ccafaf !important">
+      <ul class="list-unstyled navbar-brand pt-4">
+        <li class="mt-1 col-md-9 col-xs-12 text-md-left text-center">
+          Alef Bookstore-New Cairo
+          <br />Copyright © 2023 All rights reserved
+        </li>
+      </ul>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto mt-3">
+          <li class="nav-item">
+            <a class="nav-link mx-2 active" aria-current="page" href="#Home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#Store">STORE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#Trending">TRENDING NOW</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#About">ABOUT THE STORE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#Contact">CONTACT</a>
+          </li>
+        </ul>
+        <br />
+        <!-- Section: Social media -->
+      </div>
+    </nav>
+    <div class="text-center text-white" style="background-color: #ccafaf">
+      <!-- Grid container -->
+      <div class="container" id="footer_social">
+        <!-- Section: Social media -->
+        <section class="pb-5">
+          <!-- Facebook -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-facebook-f fa-xl"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-twitter fa-xl"></i></a>
+
+          <!-- Google -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-google fa-xl"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-instagram fa-xl"></i></a>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="cart.js"></script>
+</body>
+
+</html>

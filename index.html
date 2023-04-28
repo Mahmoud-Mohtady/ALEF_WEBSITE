@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon" />
+  <title>ALEF HOME</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                            NAVBAR START                                 -->
+  <!-- ----------------------------------------------------------------------- -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-info p-2 sticky-top" style="background-color: #ccafaf !important">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img src="media/nav_img.png" alt="..." height="70" />
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link mx-2 active" aria-current="page" href="#Home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#Store">STORE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#Trending">TRENDING NOW</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#About">ABOUT THE STORE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#Contact">CONTACT</a>
+          </li>
+          <hr />
+          <div id="navy">
+            <ul class="navbar-nav d-flex align-content-center flex-wrap">
+              <ul class="navbar-nav">
+                <li>
+                  <a class="nav-link text-dark h5" href="#Maps"><i class="fa-solid fa-location-arrow"></i></a>
+                </li>
+                <li>
+                  <a class="nav-link text-dark h5" href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                </li>
+                <li>
+                  <a class="nav-link text-dark h5" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li>
+                  <a class="nav-link text-dark h5" id="openBtn"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+                <li>
+                  <a class="nav-link text-dark h5" href="tel:01016338149"><i class="fa-solid fa-phone"></i></a>
+                </li>
+                <div>
+                  <li>
+                    <a class="nav-link text-dark h5" href="ClientZone/ClientZone.html"><i
+                        class="fa-solid fa-user"></i></a>
+                  </li>
+                </div>
+              </ul>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                            NAVBAR ENDS                                  -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- ///////////////////////////////// -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                           SIDE-CART START                               -->
+  <!-- ----------------------------------------------------------------------- -->
+  <div class="side-cart" id="mySideCart">
+    <header>
+      <h4>Your Cart</h4>
+      <a id="closeBtn"> &times; </a>
+    </header>
+    <div class="side-cart-body">
+      <div class="empty-cart text-center">
+        <h5>Your shipping cart is empty</h5>
+      </div>
+      <button class="btn btn-custom btn-lg w-100 m-3" id="continueBtn">CONTINUE SHOPPING</button>
+      <button class="btn btn-custom btn-lg w-100 m-3" id="continueBtn"><a href="cart/cart.html">GO TO CART</a></button>
+    </div>
+  </div>
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                             MAIN COVER PIC                              -->
+  <!-- ----------------------------------------------------------------------- -->
+  <div class="p-0 m-0" id="maincov">
+    <div class="text-center p-lg-6" style="background: url(media/main.jpg) center no-repeat" id="Home">
+      <div id="maincov2">
+        <h1>Alef Bookstore - New Cairo</h1>
+        <h3>
+          Maxim Mall<br />
+          Deem for Book Trading <br />Taxation License:<br />
+          526-006-684<br />
+        </h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                             END OF MAIN COVER                           -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- ///////////////////////////////// -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                             START OF STORE                              -->
+  <!-- ----------------------------------------------------------------------- -->
+  <div class="heading d-flex flex-column align-items-center mb-4" id="Store">
+    <div>
+      <h1>Main Categories</h1>
+    </div>
+    <div class="small"></div>
+  </div>
+  <section class="container">
+    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4">
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">188 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">82 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">44 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              NOVELS & ADULTS FICTION
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">98 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              YOUNG ADULTS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">87 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              PSYCHOLOGY - SELF HELP
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">65 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              BUSINESS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">43 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">90 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">23 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">82 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">100 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">17 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">88 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">82 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">49 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">82 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">20 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">7 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">82 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--col-->
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="media/back-store.jpg" class="card-img" alt="..." />
+          <div class="card-img-overlay text-center">
+            <p class="card-text">55 Products</p>
+            <button type="button" class="btn btn-outline-light position-absolute top-50 start-50 translate-middle">
+              <a href="./Productlist/ProductList.html" target="_blank">Shop Now</a>
+            </button>
+            <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
+              CLASSIC BOOKS
+            </h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!--col-->
+    </div>
+  </section>
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                             START OF TRENDING                           -->
+  <!-- ----------------------------------------------------------------------- -->
+  <div class="heading d-flex flex-column align-items-center" id="Trending">
+    <div>
+      <h1>Trending Now</h1>
+    </div>
+    <div class="small"></div>
+  </div>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5">
+      <div class="col mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/400.jpeg" alt="..." />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Fancy Product</h5>
+              $40.00 - $80.00
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-outline-dark mt-auto" href="../product details/product-details.html"
+                target="_blank">View options</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col -->
+      <div class="col mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/46301955-668x1024.jpg" alt="..." />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Fancy Product</h5>
+              $40.00 - $80.00
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-outline-dark mt-auto" href="../product details/product-details.html"
+                target="_blank">View options</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col -->
+      <div class="col mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/1003w-ysWuTD_A6cs.webp" alt="..." />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Fancy Product</h5>
+              $40.00 - $80.00
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-outline-dark mt-auto" href="../product details/product-details.html"
+                target="_blank">View options</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                              END OF TRENDING                            -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- ///////////////////////////////// -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                              START OF ABOUT                             -->
+  <!-- ----------------------------------------------------------------------- -->
+  <div class="heading d-flex flex-column align-items-center" id="About">
+    <div>
+      <h1>About The Store</h1>
+    </div>
+    <div class="small"></div>
+  </div>
+  <div class="container">
+    <p class="text-dark text-center mt-4">
+      Deem for Book Trading is the official Franchise owner of Alef Bookstore
+      in New Cairo. Founded in Sept 2018,<br />
+      and located in Maxim Mall We are very passionate about books,<br />
+      and we will definitely guide the store visitors to the best books
+      matching their taste and interests. <br />
+      In Alef Bookstore,<br />
+      You can only find original books with wide variety and different genres.
+      <br />
+      We have 3 Sections; Arabic books for all ages, <br />
+      English books for all ages and a recently added small section for French
+      Children Books <br />
+      This is in addition to the non-books collection of Notebooks, Coloring
+      Books, stationery, games and Laptop Sleeves About the store imageAbout
+      the store image.
+    </p>
+  </div>
+  <!-- images -->
+  <section class="d-flex justify-content-center text-center w-100">
+    <div class="lightbox" data-mdb-zoom-level="0.25" data-id="lightbox-ah1mr9bgo">
+      <div class="row mt-5">
+        <div class="col-lg-4">
+          <img src="media/1.jpg" class="w-100 h-auto aboutImg" />
+        </div>
+        <div class="col-lg-4">
+          <img src="media/3.jpg" class="w-100 h-auto aboutImg" />
+        </div>
+        <div class="col-lg-4">
+          <img src="media/2.jpg" class="w-100 h-auto aboutImg" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- images -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                              END OF ABOUT                               -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- ///////////////////////////////// -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                              START OF CONTACT                           -->
+  <!-- ----------------------------------------------------------------------- -->
+  <div class="heading d-flex flex-column align-items-center" id="Contact">
+    <div>
+      <h1>Contact Us</h1>
+    </div>
+    <div class="small"></div>
+  </div>
+  <div class="content" id="Contact">
+    <div class="container">
+      <div class="row">
+        <div class="d-flex col-md-6 mr-auto justify-content-around">
+          <ul class="list-unstyled pl-md-5 mb-5">
+            <li class="mb-5 text-center">
+              North Teseen Street, First New Cairo, Cairo Governorate, Egypt
+              <br />90 Road North - Maxim Mall - First Floor
+            </li>
+            <div class="d-flex flex-column align-items-center">
+              <li class="d-flex text-black mb-2 text-danger">
+                <div>
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                &nbsp; &nbsp;
+                <a class="text-dark" href="tel:01016338149">01016338149 - Alef Maxim Mall</a>
+              </li>
+              <li class="d-flex text-black mb-2">
+                <div>
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                &nbsp; &nbsp;
+                <a class="text-dark" href="mailto:customerservicedeem@gmail.com">customerservicedeem@gmail.com</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <form class="mb-5" method="post" id="contactForm" name="contactForm">
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <label for="name" class="col-form-label">Name</label>
+                <input type="text" class="form-control" name="name" id="name" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <label for="email" class="col-form-label">Email</label>
+                <input type="text" class="form-control" name="email" id="email" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 form-group mb-4">
+                <label for="message" class="col-form-label">Message</label>
+                <textarea class="form-control" name="message" id="message" cols="30" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <input type="submit" value="Send Message" class="btn btn-primary rounded-1 py-2 px-4" />
+                <span class="submitting"></span>
+              </div>
+            </div>
+          </form>
+          <div id="form-message-warning mt-4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                              END OF CONTACT                             -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- ///////////////////////// -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                              START OF MAPS                              -->
+  <!-- ----------------------------------------------------------------------- -->
+  <div class="container-fluid p-0 m-0 " id="Maps">
+    <div class="map-responsive">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13816.878280948631!2d31.455885!3d30.030558000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583d3225f12987%3A0x3188bd7f143d6618!2sFurqan%20Mosque!5e0!3m2!1sen!2sus!4v1682495273938!5m2!1sen!2sus"
+        width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                              END OF MAPS                                -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- ///////////////////////// -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                            START OF FOOTER                              -->
+  <!-- ----------------------------------------------------------------------- -->
+  <div class="container-fluid m-0 p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info p-2 d-flex" style="background-color: #ccafaf !important">
+      <ul class="list-unstyled navbar-brand pt-4">
+        <li class="mt-1 col-md-9 col-xs-12 text-md-left text-center">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alef Bookstore-New Cairo
+          <br />Copyright © 2023 All rights reserved
+        </li>
+      </ul>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto mt-3">
+          <li class="nav-item">
+            <a class="nav-link mx-2 active" aria-current="page" href="#Home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#Store">STORE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#Trending">TRENDING NOW</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#About">ABOUT THE STORE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#Contact">CONTACT</a>
+          </li>
+        </ul>
+        <br />
+        <!-- Section: Social media -->
+      </div>
+    </nav>
+    <div class="text-center text-white" style="background-color: #ccafaf">
+      <!-- Grid container -->
+      <div class="container" id="footer_social">
+        <!-- Section: Social media -->
+        <section class="pb-5">
+          <!-- Facebook -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-facebook-f fa-xl"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-twitter fa-xl"></i></a>
+
+          <!-- Google -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-google fa-xl"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-instagram fa-xl"></i></a>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                             END OF FOOTER                               -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- ///////////////////////// -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <script>
+
+    let openBtn = document.getElementById('openBtn');
+    let sideCart = document.getElementById('mySideCart')
+    let closeBtn = document.getElementById('closeBtn')
+    let continueBtn = document.getElementById('continueBtn')
+    let viewportWidth = window.innerWidth;
+
+    console.log(sideCart);
+
+    openBtn.addEventListener('click', () => {
+
+      if (viewportWidth >= 767) {
+        sideCart.style.width = '35%'
+      }
+      else { sideCart.style.width = '100%' }
+
+      sideCart.style.transform = 'scaleX(1)'
+
+    })
+
+    closeBtn.addEventListener('click', () => {
+
+      //  sideCart.style.width='0'
+      sideCart.style.transform = 'scaleX(0)'
+
+    })
+    continueBtn.addEventListener('click', () => {
+
+      //  sideCart.style.width='0'
+      sideCart.style.transform = 'scaleX(0)'
+
+    })
+
+
+
+
+  </script>
+</body>
+
+</html>

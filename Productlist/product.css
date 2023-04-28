@@ -1,0 +1,51 @@
+.nav-item a {
+    position: relative;
+    margin-left: 10px !important;
+}
+  
+.nav-item a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #900c3f;
+    transition: 0.75s;
+}
+  
+.nav-item a:hover:after {
+    width: 100%;
+}
+  
+#navy ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+div.small {
+    border-top: 4px solid #900c3f;
+    margin: 1rem;
+    width: 3rem;
+}
+.breadcrumb .breadcrumb-item a{
+    color: #900c3f !important;  
+    text-decoration: none;
+}
+.breadcrumb .active{
+    color: #000 !important;  
+}
+.product , .breadcrumb-nav{
+    margin: 40px;
+}
+
+.list-group-item{
+    border: none;
+}
+.list-group-item label{
+    color: #900c3f;
+}
