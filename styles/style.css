@@ -190,4 +190,17 @@ header a:hover {
 #continueBtn:hover {
   color: black;
   border-color: black;
+}
+
+:root {
+  --global_main_color: #900c3f;
+}
+
+.mainCOlor {
+  color: var(--global_main_color);
+}
+
+.mainCOlorback {
+  background-color: var(--global_main_color);
+  border: var(--global_main_color);
 }/*# sourceMappingURL=style.css.map */
